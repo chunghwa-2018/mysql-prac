@@ -145,7 +145,7 @@ insert into score values('07' , '03' , 98);
 50、查询下月过生日的学
 ```
 
-<detail>
+<details>
     <summary>:rocket: 答案</summmary>
 
     -- 1、查询"01"课程比"02"课程成绩高的学生的信息及课程分数  
@@ -448,7 +448,7 @@ insert into score values('07' , '03' , 98);
         select * from student where MONTH(DATE_FORMAT(NOW(),'%Y%m%d')) =MONTH(s_birth)
     -- 50、查询下月过生日的学生
         select * from student where MONTH(DATE_FORMAT(NOW(),'%Y%m%d'))+1 =MONTH(s_birth)
-</detail>
+</details>
 
 
 
