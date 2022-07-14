@@ -1,5 +1,5 @@
 ### 答案（非标准）
-
+```
 -- 1、查询"01"课程比"02"课程成绩高的学生的信息及课程分数  
 select a.* ,b.s_score as 01_score,c.s_score as 02_score from 
     student a 
@@ -301,5 +301,4 @@ from (select s_id,SUM(s_score) as sum_score from score GROUP BY s_id ORDER BY su
 -- 50、查询下月过生日的学生
     select * from student where MONTH(DATE_FORMAT(NOW(),'%Y%m%d'))+1 =MONTH(s_birth)
 
-
-
+```
